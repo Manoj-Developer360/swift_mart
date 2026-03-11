@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <defs>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF5722;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB300;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Icon Box -->
+  <rect x="4" y="4" width="92" height="92" rx="20" ry="20" fill="url(#iconGrad)" filter="url(#glow)" />
+
+  <!-- Lightning Bolt -->
+  <polygon points="58,18 34,54 50,54 42,82 68,44 52,44" fill="white" opacity="0.95"/>
+
+  <!-- SwiftMart Text -->
+  <text x="112" y="62" font-family="Georgia, serif" font-size="48" font-weight="700" fill="#0F0F0F" letter-spacing="-1">Swift</text>
+  <text x="253" y="62" font-family="Georgia, serif" font-size="48" font-weight="700" fill="#FF5722" letter-spacing="-1">Mart</text>
+
+  <!-- Tagline -->
+  <text x="113" y="82" font-family="Arial, sans-serif" font-size="13" fill="#888888" letter-spacing="3">SHOP FASTER. LIVE SMARTER.</text>
+</svg>
